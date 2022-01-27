@@ -3,8 +3,61 @@
 .App {
   text-align: center;
   color: $primary-color;
+  height: 100%;
+  background: url(./Assets/images/white-fabric-texture.jpeg), no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.Homepage {
+  width: 100%;
+  margin: auto;
+  &__cards {
+    width: 100%;
+    margin: 3em auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    &__images {
+      width: 30%;
+      margin: 2em auto;
+      overflow: hidden;
+      &__image {
+        object-fit: contain;
+        max-width: 450px;
+      }
+    }
+  }
 }
 
 .Header {
-  color: $primary-color;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  &__logo {
+    font-size: 5em;
+  }
+  &__navigation {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    text-align: center;
+    align-self: center;
+    justify-content: space-around;
+
+    &__item {
+      font-size: 1.3em;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.Footer {
+  width: 100%;
+  margin: 0 auto;
 }
