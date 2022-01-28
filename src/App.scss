@@ -25,6 +25,17 @@
       width: 30%;
       margin: 2em auto;
       overflow: hidden;
+      &:hover {
+        opacity: 0.5;
+      }
+      &__text {
+        position: relative;
+        top: 20em;
+        left: 1em;
+        // display: none;
+
+        border: 1px solid green;
+      }
       &__image {
         object-fit: contain;
         max-width: 450px;
@@ -53,6 +64,27 @@
       &:hover {
         text-decoration: underline;
       }
+    }
+  }
+}
+
+.Article {
+  height: 100vh;
+  &__container {
+    height: 90vh;
+    width: 90%;
+    margin: 3em auto;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    &__desc {
+      width: 40%;
+      margin: auto;
+      text-align: center;
+      justify-self: center;
+    }
+    &__img {
+      width: 60%;
     }
   }
 }

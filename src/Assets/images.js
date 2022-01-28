@@ -9,42 +9,42 @@ import image8 from "./images/image8.png";
 
 const images = [
   {
-    title: "image",
+    title: "image1",
     description: "Une image",
     img: image1,
   },
   {
-    title: "image",
+    title: "image2",
     description: "Une image",
     img: image2,
   },
   {
-    title: "image",
+    title: "image3",
     description: "Une image",
     img: image3,
   },
   {
-    title: "image",
+    title: "image4",
     description: "Une image",
     img: image4,
   },
   {
-    title: "image",
+    title: "image5",
     description: "Une image",
     img: image5,
   },
   {
-    title: "image",
+    title: "image6",
     description: "Une image",
     img: image6,
   },
   {
-    title: "image",
+    title: "image7",
     description: "Une image",
     img: image7,
   },
   {
-    title: "image",
+    title: "image8",
     description: "Une image",
     img: image8,
   },
