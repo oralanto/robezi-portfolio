@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import images from "../Assets/images";
+import { images } from "../Assets/images";
 
 const Homepage = () => {
   return (
@@ -10,7 +10,11 @@ const Homepage = () => {
         {images.map((image) => {
           return (
             <div className="Homepage__cards__images" key={image.title}>
-              <Link to="/article" state={{ article: image }}>
+              <Link
+                to="/article"
+                state={{ article: image }}
+                style={{ textDecoration: "none" }}
+              >
                 <img
                   className="Homepage__cards__images__image"
                   src={image.img}

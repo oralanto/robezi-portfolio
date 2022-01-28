@@ -1,12 +1,17 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <div className="Header">
       <div className="Header__logo">Robezi</div>
       <div className="Header__navigation">
-        <p className="Header__navigation__item">Portfolio</p>
-        <p className="Header__navigation__item">A propos</p>
+        <Link to="/" style={{ textDecoration: "none" }}>
+          <p className="Header__navigation__item">Portfolio</p>
+        </Link>
+        <Link to="/about" style={{ textDecoration: "none" }}>
+          <p className="Header__navigation__item">A propos</p>
+        </Link>
         <p className="Header__navigation__item">Contact</p>
       </div>
     </div>

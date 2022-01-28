@@ -6,8 +6,11 @@ import image5 from "./images/image5.png";
 import image6 from "./images/image6.png";
 import image7 from "./images/image7.png";
 import image8 from "./images/image8.png";
+import robezi from "./images/Robezi.png";
 
-const images = [
+export const profilPicture = robezi;
+
+export const images = [
   {
     title: "image1",
     description: "Une image",
@@ -49,5 +52,3 @@ const images = [
     img: image8,
   },
 ];
-
-export default images;

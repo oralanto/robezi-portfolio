@@ -26,15 +26,7 @@
       margin: 2em auto;
       overflow: hidden;
       &:hover {
-        opacity: 0.5;
-      }
-      &__text {
-        position: relative;
-        top: 20em;
-        left: 1em;
-        // display: none;
-
-        border: 1px solid green;
+        opacity: 0.8;
       }
       &__image {
         object-fit: contain;
@@ -61,6 +53,8 @@
 
     &__item {
       font-size: 1.3em;
+      text-decoration: none;
+      color: $primary-color;
       &:hover {
         text-decoration: underline;
       }
@@ -69,9 +63,8 @@
 }
 
 .Article {
-  height: 100vh;
+  min-height: 100vh;
   &__container {
-    height: 90vh;
     width: 90%;
     margin: 3em auto;
     display: flex;
@@ -82,9 +75,45 @@
       margin: auto;
       text-align: center;
       justify-self: center;
+      &__title {
+        font-size: 2em;
+      }
+      &__text {
+        font-style: italic;
+      }
     }
     &__img {
       width: 60%;
+      height: auto;
+    }
+  }
+}
+
+.About {
+  min-height: 100vh;
+  &__container {
+    width: 90%;
+    margin: 2em auto;
+    display: flex;
+    flex-direction: row;
+    &__desc {
+      width: 50%;
+      margin: auto;
+      justify-self: center;
+      text-align: center;
+      &__title {
+        font-size: 5em;
+      }
+      &__text {
+        width: 90%;
+        text-align: justify;
+        line-height: 2em;
+        font-size: 1.5em;
+      }
+    }
+    &__img {
+      width: 50%;
+      border-radius: 50%;
     }
   }
 }
