@@ -1,5 +1,5 @@
 # Portfolio Robezi
 
-## Portfolio for an artist drawer
+## Portfolio for a draw artist
 
 ### Made with React.js
