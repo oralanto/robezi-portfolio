@@ -1,10 +1,15 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
 
 import { Facebook, Instagram } from "react-feather";
-import { profilPicture } from "../Assets/images";
+import { profilPicture } from "../Data/data";
 
 const About = () => {
+  const [image, setImage] = useState();
+
+  useEffect(() => {
+    setImage(profilPicture);
+  }, []);
+
   return (
     <div className="About">
       <div className="About__container">
@@ -37,11 +42,15 @@ const About = () => {
             </a>
           </div>
         </div>
-        <img
-          src={profilPicture}
-          alt="Robezi Tsétsé Ralantoarison"
-          className="About__container__img"
-        />
+        {image ? (
+          <img
+            src={image}
+            alt="Robezi Tsétsé Ralantoarison"
+            className="About__container__img"
+          />
+        ) : (
+          <p className="About__container__img">Loading</p>
+        )}
       </div>
     </div>
   );
