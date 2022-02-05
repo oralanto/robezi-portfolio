@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <div className="Header">
       <div className="Header__logo">Robezi</div>
-      <div className="Header__navigation">
+      <div className="Header__navigation disabled">
         <Link to="/" style={{ textDecoration: "none" }}>
           <p className="Header__navigation__item">Portfolio</p>
         </Link>
