@@ -108,8 +108,9 @@
     margin: 2em auto;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     &__desc {
-      width: 50%;
+      width: 45%;
       margin: auto;
       justify-self: center;
       text-align: center;
@@ -117,7 +118,8 @@
         font-size: 5em;
       }
       &__text {
-        width: 90%;
+        width: 100%;
+        margin: auto;
         text-align: justify;
         line-height: 2em;
         font-size: 1.5em;
@@ -125,6 +127,7 @@
       &__socialMedia {
         display: flex;
         justify-content: right;
+        margin: 1em auto;
         &__link {
           margin: 0 2em;
           color: $primary-color;
@@ -145,7 +148,12 @@
 .Contact {
   min-height: 100vh;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  &__desc {
+    font-size: 1.5em;
+    width: 90%;
+    margin: 2em auto 0;
+  }
   &__containerForm {
     width: 90%;
     margin: auto;
@@ -192,4 +200,119 @@
 .Footer {
   width: 100%;
   margin: 0 auto;
+}
+
+/* Responsive */
+
+@media (max-width: 950px) {
+  /* Menu sidebar  */
+
+  .disabled {
+    display: none;
+  }
+
+  #App {
+    display: flex;
+  }
+
+  .bm-item {
+    display: inline-block;
+
+    /* Our sidebar item styling */
+    text-decoration: none;
+    margin-bottom: 10px;
+    color: #d1d1d1;
+    transition: color 0.2s;
+  }
+
+  .bm-item:hover {
+    color: white;
+  }
+
+  .bm-burger-button {
+    position: fixed;
+    width: 25px;
+    height: 20px;
+    right: 15px;
+    top: 15px;
+  }
+
+  /* Color/shape of burger icon bars */
+  .bm-burger-bars {
+    background: $primary-color;
+  }
+
+  /* Position and sizing of clickable cross button */
+  .bm-cross-button {
+    height: 24px;
+    width: 24px;
+  }
+
+  /* Color/shape of close button cross */
+  .bm-cross {
+    background: #bdc3c7;
+  }
+
+  /* General sidebar styles */
+  .bm-menu {
+    background-color: $primary-color;
+    padding: 2.5em 1.5em 0;
+    font-size: 1.7em;
+  }
+
+  /* Morph shape necessary with bubble or elastic */
+  .bm-morph-shape {
+    fill: #373a47;
+  }
+
+  /* Wrapper for item list */
+  .bm-item-list {
+    color: #b8b7ad;
+  }
+
+  /* Styling of overlay */
+  .bm-overlay {
+    background: rgba(0, 0, 0, 0.3);
+  }
+
+  /* Home page*/
+  .Homepage__cards {
+    flex-direction: column;
+    &__images {
+      width: 90%;
+    }
+  }
+
+  /* Article */
+  .Article__container {
+    flex-direction: column;
+    &__button {
+      margin: 1em 1em 0;
+    }
+    &__img {
+      width: 100%;
+    }
+  }
+
+  /* A propos */
+  .About__container {
+    flex-direction: column;
+    &__desc {
+      width: 100%;
+      margin-bottom: 2em;
+    }
+    &__img {
+      width: 100%;
+    }
+  }
+
+  /* Contact */
+  .Contact__containerForm {
+    flex-direction: column;
+    margin: 2em auto;
+    &__form {
+      width: 100%;
+      margin: 2em auto;
+    }
+  }
 }

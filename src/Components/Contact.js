@@ -33,6 +33,10 @@ const Contact = () => {
   };
   return (
     <div className="Contact">
+      <p className="Contact__desc">
+        Pour toute demande de dessin n'hesitez pas à utiliser mon formulaire de
+        contact
+      </p>
       <div className="Contact__containerForm">
         {image ? (
           <img

@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.scss";
 
 import Header from "./Components/Header";
+import SideBar from "./Components/SideBar";
 import Homepage from "./Components/Homepage";
 import Article from "./Components/Article";
 import About from "./Components/About";
@@ -13,6 +14,9 @@ function App() {
     <div className="App">
       <Router>
         <Header />
+        <div id="App">
+          <SideBar outerContainerId={"App"} />
+        </div>
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/article" element={<Article />} />
