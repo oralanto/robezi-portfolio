@@ -12,7 +12,9 @@ const Header = () => {
         <Link to="/about" style={{ textDecoration: "none" }}>
           <p className="Header__navigation__item">A propos</p>
         </Link>
-        <p className="Header__navigation__item">Contact</p>
+        <Link to="/contact" style={{ textDecoration: "none" }}>
+          <p className="Header__navigation__item">Contact</p>
+        </Link>
       </div>
     </div>
   );

@@ -7,8 +7,10 @@ import image6 from "../Assets/images/image6.png";
 import image7 from "../Assets/images/image7.png";
 import image8 from "../Assets/images/image8.png";
 import robezi from "../Assets/images/Robezi.png";
+import draw from "../Assets/images/drawing.png";
 
 export const profilPicture = robezi;
+export const drawing = draw;
 
 export const articles = [
   {
