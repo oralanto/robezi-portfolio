@@ -26,6 +26,7 @@
       width: 30%;
       margin: 2em auto;
       overflow: hidden;
+      filter: drop-shadow(12px 7px 6px rgb(51, 50, 50));
       &:hover {
         opacity: 0.8;
       }
@@ -95,6 +96,7 @@
     &__img {
       width: 60%;
       height: auto;
+      filter: drop-shadow(12px 7px 6px rgb(51, 50, 50));
     }
   }
 }
@@ -135,6 +137,7 @@
     &__img {
       width: 50%;
       border-radius: 40%;
+      filter: drop-shadow(12px 7px 6px rgb(51, 50, 50));
     }
   }
 }
