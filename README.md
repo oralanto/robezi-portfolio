@@ -1,5 +1,3 @@
 # Portfolio Robezi
 
-## Portfolio for a draw artist
-
-### Made with React.js
+## Portfolio pour un artiste dessinateur réalisé avec React, HTML, SCSS/SASS
